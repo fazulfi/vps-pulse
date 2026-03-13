@@ -1,0 +1,14 @@
+services:
+  vps-pulse:
+    build: .
+    container_name: vps-pulse
+    restart: "no"
+    env_file:
+      - .env
+    environment:
+      LOOP_ENABLED: "true"
+      ALIGN_TO_HOUR: "true"
+      RUN_IMMEDIATELY: "true"
+    volumes:
+      - ./config:/opt/vps-pulse/config
+      - ./logs:/opt/vps-pulse/logs

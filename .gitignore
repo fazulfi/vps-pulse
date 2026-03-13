@@ -1,0 +1,21 @@
+# Environments
+.env
+venv/
+env/
+.venv/
+
+# Python Cache & Testing
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.pytest_cache
+
+# Configs & Logs (Mencegah secret bocor)
+config/config.json
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+
